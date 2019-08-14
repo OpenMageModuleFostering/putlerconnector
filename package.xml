@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <name>PutlerConnector</name>
-    <version>1.0.0</version>
+    <version>1.0.2</version>
     <stability>stable</stability>
     <license>osl</license>
     <channel>community</channel>
@@ -38,11 +38,11 @@ Where to find your Putler API Token?&#xD;
     Add a new account - select "Putler Inbound API" as the account type&#xD;
     Note down the API Token and copy the same API Token in Putler Connector Settings&#xD;
 </description>
-    <notes>This is an initial version of a Magento Putler Connector which will send Magento orders data to Putler and you will get insightful statistics about your store and business</notes>
+    <notes>+ Enhancements</notes>
     <authors><author><name>Nirav Mehta</name><user>putler</user><email>support@putler.com</email></author></authors>
-    <date>2014-03-12</date>
-    <time>10:26:55</time>
-    <contents></contents>
+    <date>2014-07-10</date>
+    <time>04:53:06</time>
+    <contents><target name="magelocal"><dir name="Putler"><dir name="PutlerConnector"><dir name="Block"><dir name="Adminhtml"><dir name="System"><dir name="Config"><dir name="Form"><file name="Button.php" hash="4be787b698b2524f735de771198aa119"/></dir><file name=".DS_Store" hash="12352d4bf027b0f895185d80df00d8aa"/></dir><file name=".DS_Store" hash="60d450ab59b771a3c283579b2d35d28e"/></dir><file name=".DS_Store" hash="13c47c0f5dc265d0c60feb18896f270c"/></dir><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir><dir name="Helper"><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir><dir name="Model"><file name="Observer.php" hash="e6586aa9931937920604565aae0830b1"/><file name="PutlerConnector.php" hash="33c1d8cc4888d4722963f8aef615c9d2"/><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="PutlerConnectorController.php" hash="792e43f7a601f1b5b693ea4bfe46ca29"/><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir><file name=".DS_Store" hash="0047fe0bc161a58c6088a4e959de43a4"/></dir><dir name="etc"><file name="adminhtml.xml" hash="43c403406676afe70231750660bb5fb4"/><file name="config.xml" hash="669b1303f0874b45058f29bb8d7d9101"/><file name="system.xml" hash="39907a7a442345e2bbc2775fb5e99077"/><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir><dir name="scripts"><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir><dir name="sql"><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir><file name=".DS_Store" hash="726d0f27067fbd9df6492684f4a27ff6"/></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="template"><dir name="putler_putlerconnector"><dir name="system"><dir name="config"><file name="button.phtml" hash="ac28255b9d01c6f380df0d982aecd545"/></dir><file name=".DS_Store" hash="37607b846a8ce1ce7668699b04135e41"/></dir><file name=".DS_Store" hash="0f4979a05bd6f9fdc0531d82eb227fc9"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Putler_PutlerConnector.xml" hash="88ee2dbb5952ec807324afda8d3df677"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.2.0</min><max>5.5.0</max></php></required></dependencies>
 </package>

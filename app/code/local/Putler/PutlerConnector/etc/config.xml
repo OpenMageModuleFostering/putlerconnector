@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Putler_PutlerConnector>
+            <version>1.0.1</version>
+        </Putler_PutlerConnector>
+    </modules>
+    <global>
+        <models>
+            <putler_putlerconnector>
+                <class>Putler_PutlerConnector_Model</class>
+                <resourceModel>putlerconnector_resource</resourceModel>
+            </putler_putlerconnector>
+        </models>
+        <blocks>
+            <putler_putlerconnector>
+                <class>Putler_PutlerConnector_Block</class>
+            </putler_putlerconnector>
+        </blocks>
+        <events>
+	    	<sales_order_save_commit_after>
+					<observers>
+						<post_order_data_to_putler_on_order_complete>
+							<type>singleton</type>
+							<class>Putler_PutlerConnector_Model_Observer</class>
+							<method>postOrderDataToPutler</method>
+						</post_order_data_to_putler_on_order_complete>
+					</observers>
+			</sales_order_save_commit_after>
+		</events>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <putlerconnecotr after="Mage_Adminhtml">Putler_PutlerConnector</putlerconnecotr>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>
