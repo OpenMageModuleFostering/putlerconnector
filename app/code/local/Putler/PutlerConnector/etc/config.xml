@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Putler_PutlerConnector>
-            <version>1.0.1</version>
+            <version>1.0.3</version>
         </Putler_PutlerConnector>
     </modules>
     <global>

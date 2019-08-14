@@ -128,7 +128,7 @@ class Putler_PutlerConnector_Model_PutlerConnector {
 			$order_total = round ( $order->getSubtotal(), 2 );
 			
 			$dateInGMT = date ( 'm/d/Y', ( int ) $order->getCreatedAtStoreDate()->getTimestamp() );
-			$timeInGMT = date ( 'h:i:s A', ( int ) $order->getCreatedAtStoreDate()->getTimestamp()  );
+			$timeInGMT = date ( 'H:i:s', ( int ) $order->getCreatedAtStoreDate()->getTimestamp()  );
 			
 			
 			$order_status = $order->getStatus();
@@ -264,7 +264,7 @@ class Putler_PutlerConnector_Model_PutlerConnector {
 					$modified_timestamp = $order->getUpdatedAtStoreDate()->getTimestamp();
 					
 					$response ['Date'] = date ( 'm/d/Y', ( int ) $modified_timestamp );
-					$response ['Time'] = date ( 'h:i:s A', ( int ) $modified_timestamp );
+					$response ['Time'] = date ( 'H:i:s', ( int ) $modified_timestamp );
 					
 					$response ['Type'] = 'Refund';
 					$response ['Status'] = 'Completed';
