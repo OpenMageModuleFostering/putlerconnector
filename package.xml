@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<package>
+    <name>PutlerConnector</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>osl</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Track Magento orders on desktop and mobile with Putler - Insightful reporting that grows your business.&#xD;
+&#xD;
+Magento Putler Connector sends transactions to Putler using Putler's Inbound API. All past orders are sent when you first configure this extension. Future orders will be sent to Putler automatically.&#xD;
+&#xD;
+You need a Putler account (Free or Paid), and a Magento based store to use this extension.&#xD;
+</summary>
+    <description>Installation&#xD;
+&#xD;
+    Ensure you have latest version of Magento extension installed&#xD;
+    Unzip and upload contents of the extension to your magento root directory&#xD;
+    Activate the extension through Administration &gt; System &gt; Configuration &gt; Advance menu in Magento&#xD;
+    Make sure 'Putler_PutlerConnector' is listed on this page.&#xD;
+&#xD;
+Configuration&#xD;
+&#xD;
+Go to Administration &gt; System &gt; Configuration &gt; Putler &gt; Settings&#xD;
+&#xD;
+This is where you need to enter Putler API Token and Putler Email Address to sync your past Magento transactions to Putler and start tracking Magento transactions with Putler.&#xD;
+&#xD;
+    Enter your Putler Email Address.&#xD;
+    Enter your Putler API Token which you will get once you add a new account "Putler Inbound API" in Putler&#xD;
+    Click on "Save &amp; Send Past Orders to Putler" to send all the Magento past orders to Putler.&#xD;
+&#xD;
+All past orders will be sent to Putler. New orders will be automatically synced.&#xD;
+&#xD;
+Where to find your Putler API Token?&#xD;
+&#xD;
+    Sign up for a free account at: Putler&#xD;
+    Download and install Putler on your desktop&#xD;
+    Add a new account - select "Putler Inbound API" as the account type&#xD;
+    Note down the API Token and copy the same API Token in Putler Connector Settings&#xD;
+</description>
+    <notes>This is an initial version of a Magento Putler Connector which will send Magento orders data to Putler and you will get insightful statistics about your store and business</notes>
+    <authors><author><name>Nirav Mehta</name><user>putler</user><email>support@putler.com</email></author></authors>
+    <date>2014-03-12</date>
+    <time>10:26:55</time>
+    <contents></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>5.5.0</max></php></required></dependencies>
+</package>

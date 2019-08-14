@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Putler_PutlerConnector>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Putler_PutlerConnector>
+    </modules>
+</config> 

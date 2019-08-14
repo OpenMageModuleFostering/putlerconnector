@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+
+<config>
+    <tabs>
+        <putler translate="label">
+            <label>Putler</label>
+            <sort_order>150</sort_order>
+        </putler>
+    </tabs>
+    <sections>
+        <putlersettings translate="label" module="adminhtml">
+            <label>Settings</label>
+            <tab>putler</tab>
+            <sort_order>10</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label comment">
+                    <label>Putler Settings</label>
+                    <sort_order>50</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <comment></comment>
+                    <fields>
+                        <putler_email translate="label comment">
+                            <label>Your Putler Email Address</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </putler_email>
+                        
+                        <putler_api_token translate="label comment">
+                            <label>Your Putler API Token</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </putler_api_token>
+                        
+                        <putler_validate translate="label">
+                            <label></label>
+                            <frontend_type>button</frontend_type>
+                            <frontend_model>putler_putlerconnector/adminhtml_system_config_form_button</frontend_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </putler_validate>
+                    </fields>
+                </general>
+            </groups>
+        </putlersettings>
+    </sections>
+</config>
