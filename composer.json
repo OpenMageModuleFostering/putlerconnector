@@ -1,21 +1,5 @@
 {
-    "name": "OpenMageModuleFostering/PutlerConnector",
-    "type": "magento-module",
-    "license": "osl",
-    "homepage": "",
-    "description": "Track Magento orders on desktop and mobile with Putler - Insightful reporting that grows your business.
-
-Magento Putler Connector sends transactions to Putler using Putler's Inbound API. All past orders are sent when you first configure this extension. Future orders will be sent to Putler automatically.
-
-You need a Putler account (Free or Paid), and a Magento based store to use this extension.
-",
-    "authors": [
-    {
-        "name": "Nirav Mehta",
-        "email": "support@putler.com"
-    }
-],
-    "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+    "keywords": [
+        "openmage-module"
+    ]
 }
